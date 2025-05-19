@@ -1,0 +1,13 @@
+[project]
+name = {{ cookiecutter.project_name|tojson }}
+version = "0.1.0"
+description = {{ cookiecutter.description|tojson }}
+readme = "README.md"
+requires-python = ">={{ cookiecutter.python_version }}"
+dependencies = [
+    "torch==2.6.0"
+]
+
+
+[tool.ruff]
+line-length = 120
